@@ -15,6 +15,9 @@
 		811D66311FED072A007F8DDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D66301FED072A007F8DDF /* main.m */; };
 		811D663B1FED072A007F8DDF /* SortDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D663A1FED072A007F8DDF /* SortDemoTests.m */; };
 		811D66461FED072A007F8DDF /* SortDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D66451FED072A007F8DDF /* SortDemoUITests.m */; };
+		811D66551FED3DA7007F8DDF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D66541FED3DA7007F8DDF /* Person.m */; };
+		811D66581FEE6494007F8DDF /* SPOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D66571FEE6494007F8DDF /* SPOneViewController.m */; };
+		811D665C1FF11310007F8DDF /* CYLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 811D665B1FF11310007F8DDF /* CYLUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		811D66411FED072A007F8DDF /* SortDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		811D66451FED072A007F8DDF /* SortDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortDemoUITests.m; sourceTree = "<group>"; };
 		811D66471FED072A007F8DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811D66531FED3DA7007F8DDF /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		811D66541FED3DA7007F8DDF /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		811D66561FEE6494007F8DDF /* SPOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPOneViewController.h; sourceTree = "<group>"; };
+		811D66571FEE6494007F8DDF /* SPOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPOneViewController.m; sourceTree = "<group>"; };
+		811D665A1FF11310007F8DDF /* CYLUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLUser.h; sourceTree = "<group>"; };
+		811D665B1FF11310007F8DDF /* CYLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		811D66201FED072A007F8DDF /* SortDemo */ = {
 			isa = PBXGroup;
 			children = (
+				811D66591FF11289007F8DDF /* Model */,
 				811D66211FED072A007F8DDF /* AppDelegate.h */,
 				811D66221FED072A007F8DDF /* AppDelegate.m */,
 				811D66241FED072A007F8DDF /* ViewController.h */,
@@ -110,6 +120,10 @@
 				811D662C1FED072A007F8DDF /* LaunchScreen.storyboard */,
 				811D662F1FED072A007F8DDF /* Info.plist */,
 				811D66301FED072A007F8DDF /* main.m */,
+				811D66531FED3DA7007F8DDF /* Person.h */,
+				811D66541FED3DA7007F8DDF /* Person.m */,
+				811D66561FEE6494007F8DDF /* SPOneViewController.h */,
+				811D66571FEE6494007F8DDF /* SPOneViewController.m */,
 			);
 			path = SortDemo;
 			sourceTree = "<group>";
@@ -130,6 +144,15 @@
 				811D66471FED072A007F8DDF /* Info.plist */,
 			);
 			path = SortDemoUITests;
+			sourceTree = "<group>";
+		};
+		811D66591FF11289007F8DDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				811D665A1FF11310007F8DDF /* CYLUser.h */,
+				811D665B1FF11310007F8DDF /* CYLUser.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +290,10 @@
 			files = (
 				811D66261FED072A007F8DDF /* ViewController.m in Sources */,
 				811D66311FED072A007F8DDF /* main.m in Sources */,
+				811D66581FEE6494007F8DDF /* SPOneViewController.m in Sources */,
+				811D66551FED3DA7007F8DDF /* Person.m in Sources */,
 				811D66231FED072A007F8DDF /* AppDelegate.m in Sources */,
+				811D665C1FF11310007F8DDF /* CYLUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DE3BCGAWFV;
 				INFOPLIST_FILE = SortDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SPP.SortDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DE3BCGAWFV;
 				INFOPLIST_FILE = SortDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SPP.SortDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
